@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex'){
+                    document.querySelector(".menu nav ul").style.display = 'none'
+                }else{
+                    document.querySelector(".menu nav ul").style.display = 'flex'
+                }
+            });
+        };
+    </script>
+
+    <title>MedCenter</title>
+    <!-- Aula 4 -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/img/logo.png">
+                </a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Departments</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="container column">
+            <div class="banner_headline">
+                <h1>Top notch experience</h1>
+                <h2>We're here when you need us — for every care in the world.</h2>
+            </div>
+            <div class="banner_option">
+                <div class="banner1">
+                    <div class="banner_title">Emergency Case</div>
+                    <div class="banner_desc">Get the in person or virtual care you need.</div>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="banner2">
+                    <div class="banner_title">Doctors Timetable</div>
+                    <div class="banner_desc">Search by name, specialty, location and more.</div>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="banner3">
+                    <div class="banner_title">Opening Hours</div>
+                    <div class="container_hours">
+                        <div class="banner_week">Monday - Friday</div>
+                        <div class="banner_hour">8:00 - 17:00</div>
+                    </div>
+                    <div class="container_hours">
+                        <div class="banner_week">Saturday</div>
+                        <div class="banner_hour">9:30 - 17:30</div>                            
+                    </div>
+                    <div class="container_hours">                            
+                        <div class="banner_week">Sunday</div>
+                        <div class="banner_hour">9:30 - 15:00</div>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="geral">
+        <div class="container">
+            <section>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_texto">Latest News</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body flex">
+                        <article>
+                            <a href="#">
+                                <div class="news_data">
+                                    <div class="news_posted_at">10 MAR 23</div>
+                                    <div class="news_comment">2</div>
+                                </div>
+                                <div class="news_thumb">
+                                    <img src="assets/img/doutor1.jpg">
+                                </div>
+                                <div class="news_title">
+                                    Patient-centered care:
+                                </div>
+                                <div class="news_resume"> 
+                                    We don’t just care for your health conditions. We care about you. That means our providers take the time to listen to what’s important to you before recommending next steps.
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="#">
+                                <div class="news_data">
+                                    <div class="news_posted_at">20 FEB 23</div>
+                                    <div class="news_comment">2</div>
+                                </div>
+                                <div class="news_thumb">
+                                    <img src="assets/img/doutor1.jpg">
+                                </div>
+                                <div class="news_title">
+                                    National recognition:
+                                </div>
+                                <div class="news_resume"> 
+                                    Cleveland Clinic is consistently ranked as one of the nation’s top hospitals by U.S. News & World Report. Newsweek has also named us a top hospital in the world.
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="#">
+                                <div class="news_data">
+                                    <div class="news_posted_at">10 JAN 23</div>
+                                    <div class="news_comment">2</div>
+                                </div>
+                                <div class="news_thumb">
+                                    <img src="assets/img/doutor1.jpg">
+                                </div>
+                                <div class="news_title">
+                                    Collaborative providers:
+                                </div>
+                                <div class="news_resume"> 
+                                    You’ll get care from board-certified and fellowship trained experts who work together to create a treatment plan just for you. Only the highest standards ensure excellent outcomes.
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="#">
+                                <div class="news_data">
+                                    <div class="news_posted_at">12 DEC 23</div>
+                                    <div class="news_comment">2</div>
+                                </div>
+                                <div class="news_thumb">
+                                    <img src="assets/img/doutor1.jpg">
+                                </div>
+                                <div class="news_title">
+                                    Innovation and research:
+                                </div>
+                                <div class="news_resume"> 
+                                    We’re focused on today — and tomorrow. Our focus on research and offering the latest options means you can find a wide range of clinical trials and other care that you can’t find elsewhere.
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_texto">Departments</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_texto">Make an Appointment</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm_1">
+                    <a href="#">                        
+                        <div class="banner_title">Health Insurance</div>
+                        <div class="banner_desc">Here in Medcenter we have individual</div>
+                    </a>
+                </div>
+                <div class="fm_2">
+                    <a href="#">                        
+                        <div class="banner_title">Medical Records</div>
+                        <div class="banner_desc">Here in Medcenter we have individual</div>
+                    </a>
+                </div>
+                <div class="fm_3">
+                    <a href="#">                        
+                        <div class="banner_title">Online Bill Pay</div>
+                        <div class="banner_desc">Here in Medcenter we have individual</div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer_area">
+                <div class="footer_areaItem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_texto">MedCenter Clinic</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            <article>
+                                <div class="ex_text">
+                                    Mauris adispiscing mauris fringilla turpis interdum sed pulvinar nisi 
+                                    malesuada individual.
+                                </div>
+                                <div class="address">
+                                    <div class="address_name">MedCenter Clinic</div>
+                                    <div class="container_address">
+                                        <div class="address_text">33 Farlane Street</div>
+                                        <div class="address_tel">+123 655 655</div>
+                                    </div>
+                                    <div class="container_address">
+                                        <div class="address_text">Kelior East</div>
+                                        <div class="address_tel">+123 755 755</div>
+                                    </div>
+                                    <div class="container_address">
+                                        <div class="address_text">VIC 3033, Australia</div>
+                                        <a href="#">
+                                        <div class="address_email">medcenter@mail.com</div>   </a> 
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaItem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_texto">Latest Posts</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            <article>
+                                <div class="container_posts">
+                                    <a href="#">
+                                        <div class="ex_text_Latest">
+                                            Mauris adispiscing mauris fringilla turpis interdum sed pulvinar nisi 
+                                            malesuada.
+                                        </div>
+                                        <div class="years">6 years ago</div>
+                                    </a>
+                                </div>
+                                <div class="container_posts">
+                                    <a href="#">
+                                        <div class="ex_text_Latest">
+                                            Lorem ipsum dolor sit amat velum.
+                                        </div>
+                                        <div class="years">6 years ago</div>
+                                    </a>
+                                </div>
+                                <div class="container_posts">
+                                    <a href="#">
+                                        <div class="ex_text_Latest">
+                                            Mauris adispiscing mauris fringilla turpis interdum sed pulvinar nisi 
+                                            malesuada.
+                                        </div>
+                                        <div class="years">6 years ago</div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaItem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_texto">Latest Tweets</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            <article>
+                                <div class="container_posts">
+                                    <a href="#">
+                                        <div class="ex_text_Tweets">
+                                            Mauris adispiscing mauris fringilla turpis interdum sed pulvinar nisi 
+                                            malesuada.
+                                        </div>
+                                        <div class="years">6 years ago</div>
+                                    </a>
+                                </div>
+                                <div class="container_posts">
+                                    <a href="#">
+                                        <div class="ex_text_Tweets">
+                                            Lorem ipsum dolor sit amat velum.
+                                        </div>
+                                        <div class="years">6 years ago</div>
+                                    </a>
+                                </div>
+                                <div class="container_posts">
+                                    <a href="#">
+                                        <div class="ex_text_Tweets">
+                                            Mauris adispiscing mauris fringilla turpis interdum sed pulvinar nisi 
+                                            malesuada.
+                                        </div>
+                                        <div class="years">6 years ago</div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">
+                Copyright - Todos os direitos Reservados by Beatriz Strufaldi
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
